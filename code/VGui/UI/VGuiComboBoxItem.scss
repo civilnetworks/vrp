@@ -1,0 +1,24 @@
+﻿@import "VGuiBasePanel.scss";
+
+VGuiComboBoxItem {
+    position: relative;
+    background-color: transparent;
+    width: 100%;
+    color: white;
+    border: solid;
+    border-bottom: 1px;
+    border-color: $mid-dark-color;
+    cursor: pointer;
+    align-items: center;
+    padding: 5px;
+    font-family: $v-font;
+    font-size: 18px;
+}
+
+VGuiComboBoxItem:hover {
+    background-color: $accent-color3;
+}
+
+.v-combo-item-selected {
+    background-color: $accent-color3;
+}

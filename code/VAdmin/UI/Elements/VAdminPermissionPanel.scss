@@ -1,0 +1,55 @@
+﻿@import "../../../VGui/UI/VGuiBasePanel.scss";
+
+VAdminPermissionPanel {
+    background-color: $primary-color;
+    flex-direction: column;
+    min-height: 32px;
+    margin: 3px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-top-color: rgba(0,0,0,0.3);
+    border-left-color: transparent;
+    border-bottom-color: rgba(255,255,255,0.006);
+    border-right-color: transparent;
+
+    &.big {
+        min-height: 48px;
+    }
+
+    .top {
+        position: absolute;
+        height: 30px;
+        width: 100%;
+        align-items: center;
+        padding: 6px;
+    }
+
+    .bottom {
+        position: absolute;
+        top: 25px;
+        height: 20px;
+        width: 100%;
+        padding-left: 20px;
+    }
+
+    .label {
+        font-family: $v-font;
+        color: $text-color;
+        margin-left: 6px;
+        padding-bottom: 1px;
+    }
+
+    .right {
+        position: absolute;
+        flex-direction: row-reverse;
+        width: 70%;
+        height: 100%;
+        right: 6px;
+        align-items: center;
+    }
+
+    .desc {
+        font-family: $v-font;
+        color: slategray;
+    }
+}

@@ -1,0 +1,58 @@
+﻿@import "../../VGui/UI/VGuiBasePanel.scss";
+
+VrpItemInteractArgsMenu {
+    position: absolute;
+    background-color: $primary-color;
+    backdrop-filter: blur(4px);
+    flex-direction: column;
+    flex-shrink: 0;
+    min-width: fit-content;
+    max-width: fit-content;
+    pointer-events: all;
+
+    .title {
+        background-color: $primary-color;
+        height: 30px;
+        margin-bottom: 0;
+        font-family: $v-font;
+        color: $text-color;
+        font-size: 18px;
+        align-items: center;
+        padding: 3px;
+    }
+
+    .arg-title {
+        height: 24px;
+        margin: 3px;
+        padding: 3px;
+        font-family: $v-font;
+        color: $text-color;
+        font-size: 16px;
+    }
+
+    .input {
+        height: 30px;
+        margin: 3px;
+        margin-bottom: 0;
+    }
+
+    .submit {
+        background-color: $accent-color3;
+        height: 40px;
+        margin: 12px;
+        margin-bottom: 0;
+        font-family: $v-font;
+        color: $text-color;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 22px;
+        box-shadow: 0 0 10px black;
+        transition: all .2s ease-out;
+
+        &:hover {
+            background-color: $accent-color4;
+            transform: scale(1.03);
+        }
+    }
+}

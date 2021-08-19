@@ -1,0 +1,49 @@
+﻿@import "../../../VGui/UI/VGuiBasePanel.scss";
+
+VAdminRoleAddWindow {
+    position: absolute;
+    flex-direction: column;
+    background-color: $primary-color;
+    opacity: 1;
+    transition: all .15s ease-out;
+    box-shadow: 0 0 20px black;
+    overflow: scroll;
+
+    Button {
+        background-color: $dark-color;
+        height: 30px;
+        min-height: 30px;
+        margin: 6px;
+        margin-bottom: 0;
+        border: solid;
+        border-bottom-width: 1px;
+        border-color: $text-color;
+        cursor: pointer;
+        justify-content: center;
+        transition: all .15s ease-out;
+
+        Label {
+            font-family: $v-font;
+            color: $text-color;
+            font-size: 16px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    Button:hover {
+        transform: scale(1.03);
+        backdrop-filter: brightness(5);
+    }
+
+    &:intro {
+        opacity: 0;
+        height: 0px;
+    }
+
+    &:outro {
+        pointer-events: none;
+        opacity: 0;
+    }
+}

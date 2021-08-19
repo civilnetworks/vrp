@@ -1,0 +1,70 @@
+﻿@import "VGuiBasePanel.scss";
+
+VGuiConfirmBox {
+    position: absolute;
+    background-color: $dark-color;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    backdrop-filter: blur(8px);
+    transition: all .15s ease-out;
+
+    .popup {
+        position: absolute;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: $primary-color;
+        border-radius: 2px;
+        box-shadow: 0 0 20px $dark-color;
+
+        .message {
+            font-family: $v-font;
+            color: $text-color;
+            font-size: 18px;
+            width: 100%;
+            margin: 6px;
+            text-align: center;
+        }
+
+        .yes {
+            border-color: $green;
+        }
+
+        .no {
+            border-color: $red;
+        }
+
+        Button {
+            background-color: $highlight-color;
+            width: 50%;
+            text-align: center;
+            justify-content: center;
+            cursor: pointer;
+            border: solid;
+            border-bottom-width: 1px;
+            margin: 6px;
+            transition: all .15s ease-out;
+
+            Label {
+                font-family: $v-font;
+                color: $text-color;
+                font-size: 16px;
+            }
+        }
+
+        Button:hover {
+            background-color: $accent-color;
+            border-bottom-width: 1px;
+        }
+    }
+
+    &:intro {
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    &:outro {
+        pointer-events: none;
+        opacity: 0;
+    }
+}

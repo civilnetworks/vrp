@@ -1,0 +1,94 @@
+﻿@import "../../VGui/UI/VGuiBasePanel.scss";
+
+VrpItemHintPanel {
+    position: absolute;
+    background-color: $glass-color;
+    width: fit-content;
+    height: fit-content;
+    min-height: fit-content;
+    flex-shrink: 0;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    transition: opacity .13s ease-out;
+
+    &:intro {
+        opacity: 0;
+    }
+
+    &:outro {
+        opacity: 0;
+    }
+
+    .title {
+        background-color: $glass-color;
+        height: 30px;
+        padding: 6px;
+        font-family: $v-font;
+        color: white;
+        font-size: 16px;
+        justify-content: space-between;
+        max-width: fit-content;
+        min-width: fit-content;
+
+        .locked {
+            width: 30px;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            background-image: url(materials/vrp/interactions/unlocked.png);
+            background-image-tint: $glass-color;
+
+            &.is-locked {
+                background-image: url(materials/vrp/interactions/locked.png);
+                background-image-tint: white;
+            }
+        }
+    }
+
+    .item {
+        padding: 6px;
+        font-family: $v-font;
+        color: white;
+        font-size: 14px;
+        text-shadow: 0 0 2px black;
+    }
+
+    .claimed {
+        background-color: $glass-color;
+        position: absolute;
+        width: fit-content;
+        max-width: 320px;
+        height: 22px;
+        padding: 3px;
+        left: 105%;
+        top: 3px;
+        font-family: $v-font;
+        flex-shrink: 0;
+        text-wrap: none;
+        white-space: nowrap;
+        color: white;
+        overflow: hidden;
+        transition: all .6s ease-out;
+        opacity: 0;
+
+
+        &.is-claimed {
+            opacity: 1;
+        }
+
+        &:intro {
+            opacity: 0;
+            top: 10px;
+        }
+
+        Image {
+            width: 30px;
+            min-width: 30px;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-size: contain;
+            background-image-tint: white;
+        }
+    }
+}

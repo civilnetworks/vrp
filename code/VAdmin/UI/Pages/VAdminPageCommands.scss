@@ -1,0 +1,51 @@
+﻿@import "../../../VGui/UI/VGuiBasePanel.scss";
+
+VAdminPageCommands {
+    .list {
+        flex-direction: column;
+        background-color: $mid-dark-color;
+        width: 240px;
+        min-width: 240px;
+        margin: 3px;
+        border-radius: 3px;
+        overflow: scroll;
+
+        .scroll-content {
+            flex-direction: column;
+            position: absolute;
+            width: 100%;
+            min-height: 100%;
+        }
+    }
+
+    .command-fill {
+        flex-direction: column;
+        width: 100%;
+        overflow: scroll;
+        margin-right: 6px;
+    }
+
+    .run-cmd-button {
+        background-color: $accent-color4;
+        font-family: $v-font-medium;
+        color: $text-color;
+        font-size: 16px;
+        margin-left: 3px;
+        margin-top: 6px;
+        border-radius: 3px;
+        padding: 9px;
+        cursor: pointer;
+        transition: all .12s ease-out;
+        box-shadow: 0 0 3px black;
+    }
+
+    .run-cmd-button:hover {
+        padding: 12px;
+        backdrop-filter: brightness(5);
+    }
+
+    .run-cmd-button:active {
+        padding: 12px;
+        transform: scale(0.98);
+    }
+}

@@ -1,0 +1,31 @@
+﻿@import "../../VGui/UI/VGuiBasePanel.scss";
+
+VVehicleEditSeatsMenu {
+    background-color: red;
+
+    .content {
+        width: 100%;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    Button {
+        min-height: 40px;
+        height: 40px;
+        background-color: $accent-color4;
+        font-family: $v-font-medium;
+        color: $text-color;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 6px;
+        box-shadow: 0 0 10px black;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        transition: all .2s ease-out;
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+}

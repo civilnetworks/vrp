@@ -1,0 +1,59 @@
+﻿@import "../../vgui/ui/VGuiBasePanel.scss";
+
+characterselectmenu {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    pointer-events: all;
+    //background-image: url( /ui/mainmenu/bg.png );
+    transition: opacity .5s ease-out;
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        background-color: $primary-color;
+        min-width: 25%;
+        max-width: 25%;
+        height: 100%;
+        margin-right: -25%;
+        box-shadow: 0 0 0px 0px $dark-color;
+        transition: all 0.35s ease-out;
+    }
+
+    .right-visible {
+        margin-right: 0;
+    }
+
+
+    .left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        right: 0;
+        height: 100%;
+        background-color: $dark-color;
+    }
+}
+
+.character-card-selected {
+    background-color: $primary-color-opaque;
+    background: none;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    cursor: default;
+    z-index: 99999;
+    border-radius: 5px;
+}
+
+.character-card-selected:hover {
+    transform: scale(1);
+    border-radius: 5px;
+}

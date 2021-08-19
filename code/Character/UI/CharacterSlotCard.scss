@@ -1,0 +1,60 @@
+﻿@import "../../vgui/ui/VGuiBasePanel.scss";
+
+characterslotcard {
+    background: linear-gradient($accent-color4, $accent-color2);
+    width: 19%;
+    height: 50%;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: all .3s ease-out;
+
+    .character-slot-fill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hint-icon {
+        width: 50px;
+        height: 50px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .hint {
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        margin-top: 20px;
+    }
+
+    .character-name {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        font-family: $v-font;
+        color: $text-color;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 15%;
+    }
+
+    .model {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+characterslotcard:hover {
+    transform: scale(1.2);
+    z-index: 9999;
+    border-radius: 30px;
+}
+
+characterslotcard:active {
+    transform: scale(0.9);
+    transition: all .07s ease-out;
+}

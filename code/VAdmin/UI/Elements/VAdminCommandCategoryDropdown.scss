@@ -1,0 +1,70 @@
+﻿@import "../../../VGui/UI/VGuiBasePanel.scss";
+
+VAdminCommandCategoryDropdown {
+    flex-direction: column;
+
+    .header {
+        background-color: $accent-color3;
+        font: $v-font;
+        color: $text-color;
+        font-size: 18px;
+        height: 40px;
+        min-height: 40px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all .15s ease-out;
+        box-shadow: 0 0 6px black;
+
+        &.closed {
+            color: gray;
+            height: 30px;
+            min-height: 30px;
+        }
+    }
+
+    .header:hover {
+        background-color: $accent-color4;
+    }
+
+    .content {
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+        padding-bottom: 3px;
+        opacity: 1;
+        transition: all 0s ease-out;
+
+        Button {
+            background-color: $primary-color;
+            height: 30px;
+            min-height: 30px;
+            margin: 3px;
+            margin-bottom: 0;
+            padding: 3px;
+            border-radius: 2px;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            transition: all .2s ease-out;
+
+            Label {
+                font: $v-font;
+                color: $text-color;
+            }
+        }
+
+        Button:hover {
+            background-color: $highlight-color;
+            transform: scale(1.03);
+        }
+
+        &.closed {
+            height: 0;
+            opacity: 0;
+            transition: all .2s ease-out;
+            pointer-events: none;
+        }
+    }
+}

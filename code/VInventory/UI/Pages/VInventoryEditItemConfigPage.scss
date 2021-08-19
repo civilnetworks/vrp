@@ -1,0 +1,59 @@
+﻿@import "../../../VGui/UI/VGuiBasePanel.scss";
+
+VInventoryEditItemConfigPage {
+    width: 100%;
+    flex-direction: column;
+
+    .config-scroll {
+        width: 100%;
+        flex-direction: column;
+        overflow: scroll;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+
+    .element {
+        background-color: $accent-color2;
+        border-radius: 3px;
+        margin: 6px;
+        margin-bottom: 0;
+        box-shadow: 0 0 6px black;
+
+        VGuiTextEntry {
+            flex-grow: 1;
+        }
+
+        VGuiComboBox {
+            width: 50%;
+        }
+    }
+
+    .element-name {
+        font-family: $v-font;
+        color: $text-color;
+        font-size: 18px;
+        padding: 6px;
+        min-width: 90px;
+        width: 90px;
+    }
+
+    .save {
+        height: 30px;
+        min-height: 30px;
+        font-family: $v-font;
+        color: $text-color;
+        background-color: $accent-color3;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 18px;
+        margin: 6px;
+        box-shadow: 0 0 10px black;
+        cursor: pointer;
+        transition: all .2s ease-out;
+
+        &:hover {
+            background-color: $accent-color4;
+        }
+    }
+}

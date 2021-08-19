@@ -1,0 +1,28 @@
+﻿@import "VGuiBasePanel.scss";
+
+$size: 90px;
+
+VGuiSpawnIcon {
+    background-color: $highlight-color;
+    min-width: $size;
+    min-height: $size;
+    max-width: $size;
+    max-height: $size;
+    width: $size;
+    height: $size;
+    cursor: pointer;
+    border-radius: 3px;
+    //box-shadow: 0 0 6px black;
+    transition: all .2s ease-out;
+
+    .modelicon {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+VGuiSpawnIcon:hover {
+    background-color: $accent-color3;
+    transform: scale(1.3);
+    z-index: 99999;
+}

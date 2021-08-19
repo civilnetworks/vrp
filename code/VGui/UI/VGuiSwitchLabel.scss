@@ -1,0 +1,26 @@
+﻿@import "VGuiBasePanel.scss";
+
+VGuiSwitchLabel {
+    align-items: center;
+    justify-content: space-between;
+
+    .label {
+        font-family: $v-font;
+        color: $text-color;
+        min-width: 120px;
+        text-wrap: avoid;
+        margin-right: 20px;
+    }
+
+    .check {
+        margin-left: 20px;
+    }
+
+    .line {
+        position: relative;
+        background-color: $dark-color;
+        height: 3px;
+        width: 100%;
+        border-radius: 3px;
+    }
+}

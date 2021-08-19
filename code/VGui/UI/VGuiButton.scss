@@ -1,0 +1,44 @@
+﻿@import "VGuiBasePanel.scss";
+
+VGuiButton {
+    background: linear-gradient($highlight-color, $accent-color);
+    font-family: $v-font;
+    color: $text-color;
+    margin: 5px;
+    min-height: 40px;
+    font-family: $v-font;
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 0px;
+    cursor: pointer;
+    align-items: center;
+    border: solid;
+    border-width: 1px;
+    border-color: $border-color;
+    transition: all .13s ease-out;
+    justify-content: center;
+    overflow: hidden;
+
+    .line {
+        background-color: $border-color-hover;
+        position: absolute;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        transition: all .15s ease-out;
+    }
+}
+
+VGuiButton:hover {
+    color: $text-color-accent;
+    background-color: $accent-color3;
+    border-color: $border-color-hover;
+    border-width: 2px;
+
+    .line {
+        position: absolute;
+        bottom: 0;
+        width: 110%;
+        height: 2px;
+    }
+}

@@ -1,0 +1,17 @@
+﻿@import "../../../VGui/UI/VGuiBasePanel.scss";
+
+VInventoryItemConfigsPage {
+    flex-direction: column;
+
+    .config-scroll {
+        flex-grow: 1;
+        overflow: scroll;
+        flex-direction: column;
+        flex-shrink: 0;
+    }
+
+    .new-drop {
+        height: 38px;
+        box-shadow: 0 0 10px black;
+    }
+}

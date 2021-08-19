@@ -1,0 +1,27 @@
+﻿@import "VGuiBasePanel.scss";
+
+VGuiContextList {
+    background-color: $dark-color;
+    position: absolute;
+    box-shadow: 0 0 10px black;
+    width: fit-content;
+    height: fit-content;
+    min-width: fit-content;
+    min-width: fit-content;
+    z-index: 9999;
+
+    Button {
+        padding: 3px;
+    }
+
+    TextEntry {
+        padding: 3px;
+        min-width: fit-content;
+        min-width: fit-content;
+        white-space: nowrap;
+        font-family: $v-font;
+        color: $text-color;
+
+        cursor: text;
+    }
+}

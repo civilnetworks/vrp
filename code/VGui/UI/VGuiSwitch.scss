@@ -1,0 +1,38 @@
+﻿@import "VGuiBasePanel.scss";
+
+VGuiSwitch {
+    background-color: $extra-dark-color;
+    min-width: 40px;
+    max-width: 40px;
+    height: 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: solid;
+    border-width: 1px;
+    border-bottom-color: rgba(200,200,200,0.02);
+    border-right-color: rgba(200,200,200,0.01);
+    border-top-color: rgba(0,0,0,0.3);
+    border-left-color: rgba(0,0,0,0.4);
+    transition: all .2s ease-out;
+    align-items: center;
+    margin: 4px 0;
+
+    &.checked {
+    }
+
+    .widget {
+        background-color: $accent-color4;
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        margin: 2px;
+        left: -4;
+        border-radius: 8px;
+        transition: all .2s ease-out;
+        box-shadow: 0 0 10px black;
+
+        &.checked {
+            left: 20px;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+﻿@import "VGuiBasePanel.scss";
+
+vguiheader {
+    .close {
+        position: absolute;
+        background-image: url(materials/vrp/close.png);
+        background-size: cover;
+        background-position: center;
+        background-image-tint: $red-primary;
+        right: 6px;
+        width: 30px;
+        height: 70%;
+        color: $white;
+        cursor: pointer;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 0px;
+        font-size: 25px;
+        font-family: $v-font;
+    }
+
+    .close:hover {
+        background-image-tint: $red;
+    }
+}
+
+.v-header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to left, $accent-color2, $accent-color)
+    height: 40px;
+    min-height: 40px;
+    top: 0;
+    width: 100%;
+
+    .bar {
+        background-color: $text-color-accent;
+        width: 6px;
+        height: 100%;
+        left: 0;
+        margin-right: 5px;
+    }
+
+    .icon {
+        display: block;
+        margin-left: 1px;
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .title {
+        font-size: 20px;
+        color: $text-color-accent;
+        margin-left: 5px;
+        font-family: $v-font;
+    }
+}

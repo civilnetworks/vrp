@@ -1,0 +1,28 @@
+﻿@import "VGuiBasePanel.scss";
+
+VGuiComboBoxWang {
+    .wang {
+        background-color: $highlight-color;
+        width: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-family: $v-font;
+        font-size: 20px;
+        color: $text-color;
+        border-radius: 3px;
+        cursor: pointer;
+        border: solid;
+        border-width: 2px;
+        border-color: $border-color;
+        margin: 5px 0;
+        margin-right: 5px;
+        transition: all .13s ease-out;
+    }
+
+    .wang:hover {
+        color: $text-color-accent;
+        background-color: $accent-color3;
+        border-color: $border-color-hover;
+    }
+}

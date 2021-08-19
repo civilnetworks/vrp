@@ -1,0 +1,60 @@
+﻿@import "../../../VGui/UI/VGuiBasePanel.scss";
+
+VAdminRolePanel {
+    background-color: $highlight-color;
+    height: 50px;
+    margin: 6px;
+    margin-bottom: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0px 0px 60px rgba(0,0,0,0.1);
+    border-width: 0px;
+    border-style: solid;
+    border-color: rgba(255,255,255,1);
+    transform: scale(0.98);
+    align-items: center;
+    box-shadow: 0 0 6px rgb(15,15,15);
+    transition: all .15s ease-out;
+
+    .icon {
+        width: 20%;
+        height: 100%;
+        margin-right: 4px;
+        margin: 6px;
+        margin-right: 0;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .container {
+        width: 100%;
+        margin: 3px;
+        overflow: hidden;
+    }
+
+    .label {
+        align-items: center;
+        font-family: $v-font;
+        color: $text-color;
+        font-size: 18px;
+        min-width: 100%;
+        margin: 0;
+    }
+
+    &.selected {
+        backdrop-filter: brightness(2) saturate(2);
+        transform: scale(1.01);
+        border-bottom-width: 1px;
+    }
+}
+
+VAdminRolePanel:hover {
+    backdrop-filter: brightness(1.2) saturate(3);
+    transform: scale(1);
+
+    &.selected {
+        backdrop-filter: brightness(2) saturate(2);
+        transform: scale(1.01);
+        border-bottom-width: 1px;
+    }
+}

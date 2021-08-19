@@ -1,0 +1,38 @@
+﻿@import "../../VGui/UI/VGuiBasePanel.scss";
+
+VVehicleSeatPanel {
+    min-height: 30px;
+    height: fit-content;
+    background-color: $accent-color3;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 3px;
+    justify-content: center;
+    box-shadow: 0 0 10px black;
+
+    .entry {
+
+    }
+
+    .banner {
+        justify-content: space-between;
+    }
+
+    .delete {
+        background-color: $red;
+        color: white;
+        font-family: $v-font-medium;
+        font-size: 20px;
+        width: 60px;
+    }
+
+    .label {
+        font-family: $v-font;
+        color: $text-color;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 6px;
+    }
+}

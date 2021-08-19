@@ -1,0 +1,151 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc29:version{3cec427c-1b0e-4d48-a90a-0436f33a6041} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "MaterialGroupList"
+				children = 
+				[
+					{
+						_class = "DefaultMaterialGroup"
+						remaps = 
+						[
+							{
+								from = "material019.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_m019.vmat"
+							},
+							{
+								from = "plate_d-dds.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_plate.vmat"
+							},
+							{
+								from = "material017.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_m017.vmat"
+							},
+							{
+								from = "material013.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_m013.vmat"
+							},
+							{
+								from = "material006.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_m006.vmat"
+							},
+							{
+								from = "details.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_details.vmat"
+							},
+							{
+								from = "accents.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_accents.vmat"
+							},
+							{
+								from = "trims.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_trims.vmat"
+							},
+							{
+								from = "under.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_under.vmat"
+							},
+							{
+								from = "lights.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_lights.vmat"
+							},
+							{
+								from = "interior_black.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_black.vmat"
+							},
+							{
+								from = "grill_black.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_black.vmat"
+							},
+							{
+								from = "interior_white.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_interior_white.vmat"
+							},
+							{
+								from = "guage.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_black.vmat"
+							},
+							{
+								from = "glass.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_glass.vmat"
+							},
+							{
+								from = "frame.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_frame.vmat"
+							},
+							{
+								from = "floor_mat.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_floormat.vmat"
+							},
+							{
+								from = "extinguisher.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_extinguisher.vmat"
+							},
+							{
+								from = "dial_needles.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_extinguisher.vmat"
+							},
+							{
+								from = "dials.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_dials.vmat"
+							},
+							{
+								from = "body.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_body.vmat"
+							},
+							{
+								from = "black.vmat"
+								to = "materials/civilgamers/models/vehicles/nissan_fairlady/nissan_fairlady_black.vmat"
+							},
+						]
+						use_global_default = false
+						global_default_material = ""
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children = 
+				[
+					{
+						_class = "PhysicsHullFromRender"
+						parent_bone = ""
+						surface_prop = "default"
+						collision_prop = "default"
+						faceMergeAngle = 20.0
+						maxHullVertices = 32
+					},
+				]
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						filename = "raw_content/models/civilgamers/vehicles/nissan_fairlady/nissan_fairlady_body.fbx"
+						import_translation = [ 0.0, 0.0, 0.0 ]
+						import_rotation = [ 0.0, 0.0, 0.0 ]
+						import_scale = 1.0
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						parent_bone = ""
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+	}
+}

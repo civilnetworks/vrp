@@ -1,0 +1,32 @@
+﻿@import "../../VGui/UI/VGuiBasePanel.scss";
+
+VrpItemSpawnMenu {
+    flex-direction: column;
+    flex-shrink: 0;
+    overflow: scroll;
+
+    Label {
+        font-family: $v-font-medium;
+        color: $text-color;
+        padding: 6px;
+        font-size: 16px;
+    }
+
+
+    VGuiSwitch {
+        margin: 12px;
+    }
+
+    Button {
+        background-color: $accent-color3;
+        margin: 3px;
+        padding: 3px;
+        box-shadow: 0 0 6px black;
+        cursor: pointer;
+        transition: all .15s ease-out;
+    }
+
+    Button:hover {
+        background-color: $accent-color4;
+    }
+}
